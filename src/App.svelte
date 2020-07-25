@@ -2,28 +2,9 @@
 	export let name;
 </script>
 
-<main>
-	<h1>Hello My Name is {name}!</h1>
+<main class="bg-teal-700 flex flex-1 flex-col h-screen justify-center md:justify-center md:px-0 px-16">
+	<div>
+		<h1 class="font-thin mx-auto outline-none text-5xl text-center text-green-400" contenteditable="true">Hello my name is {name}! 😁</h1>
+		<h2 contenteditable="true" class="outline-none font-thin mx-auto text-3xl text-center text-white">I'm learning svelte + tailwind now 😎</h2>
+	</div>
 </main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
